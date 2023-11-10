@@ -1,5 +1,5 @@
 import React, { useRef, useState, useEffect } from "react";
-import WaveSurfer from "https://unpkg.com/wavesurfer.js@7/dist/wavesurfer.esm.js";
+import WaveSurfer from 'wavesurfer.js';
 import VideoInput from "./Components/VideoInput";
 import VideoPlayer from "./Components/VideoPlayer";
 import Metadata from "./Components/Metadata";
