@@ -6,15 +6,31 @@ body {
         color: white;
   }
 
+
+  .centered-container {
+    flex: 0 0 70%;
+  }
+
+  .metadata-container {
+    flex: 0 0 30%;
+    background-color: #f0f0f0; 
+    padding: 10px;
+  }
+
+  .centered-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center; /* Optional: Align text content to the center */
+    width: 100%;
+    height: 100%;
+  }
 /* VideoInput */
-
-
 
 .fileInputLabel {
     padding: 10px 32px; 
     margin-top: 20%;
-    display: flex;
-    align-items: center; 
+   
     outline: 0;
     border: 0;
     cursor: pointer;
@@ -30,7 +46,7 @@ body {
   }
   
   .fileInputLabel:hover {
-    background: radial-gradient(100% 100% at 100% 0%, #4d185f 0%, #770d98 100%); /* Change the background color on hover */
+    background: radial-gradient(100% 100% at 100% 0%, #4d185f 0%, #770d98 100%); 
     box-shadow: 0px 4px 8px rgba(84, 76, 103, 0.4), 0px 7px 13px -3px rgba(48, 45, 53, 0.3), inset 0px -3px 0px #33343c;
     transform: translateY(-2px);
   }
@@ -47,7 +63,7 @@ body {
 
 /* Styling for VideoPlayer */
 .videoPlayerContainer {
-  flex: 70; /* Adjusted flex property to 70% */
+  flex: 70; 
   margin-right: 10px;
   position: relative;
   box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
@@ -77,7 +93,7 @@ body {
 
 /* Styling for Metadata */
 .metadataContainer {
-  flex: 30; /* Adjusted flex property to 30% */
+  flex: 30;
   margin-left: 10px;
   box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
   border: 2px solid #ddd;
@@ -97,3 +113,20 @@ body {
 }
 
   
+/* waveform*/
+
+.waveform-container {
+    margin-top: 10px;
+    width: 100%;
+  }
+  
+  .waveform-title {
+    font-size: 18px;
+    margin-bottom: 5px;
+  }
+  
+  .waveform-canvas {
+    width: 100%;
+    height: 100px;
+    /* Add additional styling for the waveform canvas if needed */
+  }

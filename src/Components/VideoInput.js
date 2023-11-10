@@ -12,7 +12,7 @@ const VideoInput = ({ handleFileChange }) => {
   };
 
   return (
-    <div className="main-container">
+    <div className="centered-container">
       <form>
         <label
           htmlFor="fileInput"

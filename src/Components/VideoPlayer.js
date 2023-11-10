@@ -2,7 +2,7 @@ import React, { useRef } from "react";
 
 const VideoPlayer = ({ videoRef, togglePlayPause, isPlaying }) => {
   return (
-    <div className="main-container">
+    // <div className="main-container">
       <div className="videoPlayerContainer">
         <video ref={videoRef} className="videoPlayer" />
         <button
@@ -12,7 +12,7 @@ const VideoPlayer = ({ videoRef, togglePlayPause, isPlaying }) => {
           {isPlaying ? "Pause" : "Play"}
         </button>
       </div>
-    </div>
+    // </div>
   );
 };
 
