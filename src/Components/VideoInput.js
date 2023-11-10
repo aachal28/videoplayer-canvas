@@ -1,4 +1,3 @@
-// VideoInput.js
 import React, { useState } from "react";
 
 const VideoInput = ({ handleFileChange }) => {
@@ -13,20 +12,22 @@ const VideoInput = ({ handleFileChange }) => {
   };
 
   return (
-    <form>
-      <label
-        htmlFor="fileInput"
-        className="fileInputLabel"
-      >
-        {selectedFileName || "Select Video"}
-      </label>
-      <input
-        id="fileInput"
-        type="file"
-        onChange={handleFileSelection}
-        style={{ display: "none" }}
-      />
-    </form>
+    <div className="main-container">
+      <form>
+        <label
+          htmlFor="fileInput"
+          className="fileInputLabel"
+        >
+          {selectedFileName || "Select Video"}
+        </label>
+        <input
+          id="fileInput"
+          type="file"
+          onChange={handleFileSelection}
+          style={{ display: "none" }}
+        />
+      </form>
+    </div>
   );
 };
 
