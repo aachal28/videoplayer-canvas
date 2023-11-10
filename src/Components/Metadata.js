@@ -10,6 +10,7 @@ const Metadata = ({ videoMetadata }) => {
         <p>Size: {videoMetadata.size} bytes</p>
         <p>Last Modified: {new Date(videoMetadata.lastModified).toLocaleString()}</p>
         <p>Duration: {videoMetadata.duration.toFixed(2)} seconds</p>
+        
       </div>
     // </div>
   );

@@ -19,26 +19,17 @@ body {
     border: 0;
     cursor: pointer;
     will-change: box-shadow, transform;
-    background: radial-gradient(100% 100% at 100% 0%, #862ba2 0%, #2b1b30 100%);
-    box-shadow: 0px 2px 4px rgba(45, 35, 66, 0.4), 0px 7px 13px -3px rgba(45, 35, 66, 0.3), inset 0px -3px 0px rgba(58, 65, 111, 0.5);
+    background:  #121111;
+    box-shadow: 0px 2px 4px rgba(45, 35, 66, 0.4);
     border-radius: 5px;
     color: #fff;
     height: auto;
     font-size: 18px;
     text-shadow: 0 1px 0 rgba(0, 0, 0, 0.4);
-    transition: box-shadow 0.15s ease, transform 0.15s ease;
   }
   
-  .fileInputLabel:hover {
-    background: radial-gradient(100% 100% at 100% 0%, #4d185f 0%, #770d98 100%); 
-    box-shadow: 0px 4px 8px rgba(84, 76, 103, 0.4), 0px 7px 13px -3px rgba(48, 45, 53, 0.3), inset 0px -3px 0px #33343c;
-    transform: translateY(-2px);
-  }
   
-  .fileInputLabel:active {
-    box-shadow: inset 0px 3px 7px #6b2183;
-    transform: translateY(2px);
-  }
+ 
 
 
 /* VideoPlayer.css */
@@ -48,6 +39,7 @@ body {
   position: relative;
   box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
   border-radius: 8px;
+  border: solid 2px #201d1d;
   overflow: hidden;
     width: 100%;
     height: 400px;
@@ -57,7 +49,7 @@ body {
   width: 100%;
   height: 100%;
   object-fit: cover;
-  background: linear-gradient(to right top, #0e0e0e, #221c35, #3b265b, #5c2c80, #862ba2, #862ba2, #862ba2, #862ba2, #5c2c80, #3b265b, #221c35, #0e0e0e);
+  background: #121111;
 }
 
 .playPauseButton {
@@ -87,9 +79,9 @@ body {
   width: 50%;
   height: auto;
   box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
-  border: none;
+  border: solid 2px #201d1d;
   border-radius: 8px;
-  background-color: #000000b7;
+  background-color: #121111;
 }
 
 .metadataContainer h3 {
