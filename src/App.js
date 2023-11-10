@@ -5,6 +5,7 @@ import VideoInput from "./Components/VideoInput";
 import VideoPlayer from "./Components/VideoPlayer";
 import Metadata from "./Components/Metadata";
 import Waveform from "./Components/Waveform";
+import detectAudio from "./Components/audioDetection";
 import "./App.css";
 
 function App() {
@@ -23,32 +24,33 @@ function App() {
 
   const handleFileChange = (e) => {
     e.preventDefault();
-
+    detectAudio(videoRef, setIsPlaying, setVideoMetadata);
+    
     const file = e.target.files[0];
 
     const video = videoRef.current;
     const source = URL.createObjectURL(file);
     video.src = source;
 
-    // Initialize WaveSurfer directly from CDN
+    // Initialize WaveSurfer 
     wavesurfer.current = WaveSurfer.create({
       container: canvasRef.current,
       waveColor: "rgb(134, 43, 162)",
       progressColor: "rgb(100, 0, 100)",
       media: video,
         // Set a bar width
-  barWidth: 2,
-  // Optionally, specify the spacing between bars
-  barGap: 1,
-  // And the bar radius
-  barRadius: 2,
+      barWidth: 2,
+      // Optionally, specify the spacing between bars
+      barGap: 1,
+      // And the bar radius
+      barRadius: 2,
     });
 
 
 
     wavesurfer.current.load(source);
 
-    // Extracting video metadata
+    // Extracting  metadata
     setVideoMetadata({
       name: file.name,
       type: file.type,
