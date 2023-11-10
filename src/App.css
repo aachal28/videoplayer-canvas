@@ -1,0 +1,61 @@
+
+
+
+body {
+   
+    background: #000000;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #434343, #000000);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #434343, #000000); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+        color: white;
+  }
+
+  /* .input-btn{
+
+   /* App.css */
+
+/* .fileInputLabel {
+    cursor: pointer;
+    padding: 10px;
+    background: #862ba2;
+    color: #fff;
+    border-radius: 5px;
+    margin-top: 20%;
+    display: block;
+    transition: background-color 0.3s ease-in-out;
+  }
+  
+  .fileInputLabel:hover {
+    background: #6b2183; /* Change the background color on hover */
+/* VideoInput */
+
+.fileInputLabel {
+    padding: 10px 32px; /* Adjusted padding */
+    margin-top: 20%;
+    display: flex;
+    align-items: center; /* Vertically center the content */
+    outline: 0;
+    border: 0;
+    cursor: pointer;
+    will-change: box-shadow, transform;
+    background: radial-gradient(100% 100% at 100% 0%, #862ba2 0%, #292222 100%);
+    box-shadow: 0px 2px 4px rgba(45, 35, 66, 0.4), 0px 7px 13px -3px rgba(45, 35, 66, 0.3), inset 0px -3px 0px rgba(58, 65, 111, 0.5);
+    border-radius: 5px;
+    color: #fff;
+    height: auto;
+    font-size: 18px;
+    text-shadow: 0 1px 0 rgba(0, 0, 0, 0.4);
+    transition: box-shadow 0.15s ease, transform 0.15s ease;
+  }
+  
+  .fileInputLabel:hover {
+    background: radial-gradient(100% 100% at 100% 0%, #6b2183 0%, #862ba2 100%); /* Change the background color on hover */
+    box-shadow: 0px 4px 8px rgba(84, 76, 103, 0.4), 0px 7px 13px -3px rgba(48, 45, 53, 0.3), inset 0px -3px 0px #33343c;
+    transform: translateY(-2px);
+  }
+  
+  .fileInputLabel:active {
+    box-shadow: inset 0px 3px 7px #6b2183;
+    transform: translateY(2px);
+  }
+  
+  
