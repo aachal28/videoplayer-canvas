@@ -6,23 +6,12 @@ body {
         color: white;
   }
 
-
-  .centered-container {
-    flex: 0 0 70%;
-  }
-
-  .metadata-container {
-    flex: 0 0 30%;
-    background-color: #f0f0f0; 
-    padding: 10px;
-  }
-
   .centered-container {
     display: flex;
     justify-content: center;
     align-items: center;
     text-align: center; /* Optional: Align text content to the center */
-    width: 100%;
+    width: 70%;
     height: 100%;
   }
 /* VideoInput */
@@ -30,7 +19,7 @@ body {
 .fileInputLabel {
     padding: 10px 32px; 
     margin-top: 20%;
-   
+   display: flex;
     outline: 0;
     border: 0;
     cursor: pointer;

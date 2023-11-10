@@ -33,10 +33,18 @@ function App() {
     // Initialize WaveSurfer directly from CDN
     wavesurfer.current = WaveSurfer.create({
       container: canvasRef.current,
-      waveColor: "rgb(200, 0, 200)",
+      waveColor: "rgb(134, 43, 162)",
       progressColor: "rgb(100, 0, 100)",
       media: video,
+        // Set a bar width
+  barWidth: 2,
+  // Optionally, specify the spacing between bars
+  barGap: 1,
+  // And the bar radius
+  barRadius: 2,
     });
+
+
 
     wavesurfer.current.load(source);
 
