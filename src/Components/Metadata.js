@@ -4,7 +4,7 @@ const Metadata = ({ videoMetadata }) => {
   return (
     // <div className="main-container">
       <div className="metadataContainer">
-        <h2>Video Metadata</h2>
+        <h3>Video Metadata</h3>
         <p>Name: {videoMetadata.name}</p>
         <p>Type: {videoMetadata.type}</p>
         <p>Size: {videoMetadata.size} bytes</p>

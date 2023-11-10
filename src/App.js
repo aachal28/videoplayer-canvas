@@ -4,7 +4,6 @@ import VideoInput from "./Components/VideoInput";
 import VideoPlayer from "./Components/VideoPlayer";
 import Metadata from "./Components/Metadata";
 import Waveform from "./Components/Waveform";
-import detectAudio from "./Components/audioDetection";
 import "./App.css";
 
 function App() {
@@ -23,10 +22,8 @@ function App() {
 
   const handleFileChange = (e) => {
     e.preventDefault();
-    detectAudio(videoRef, setIsPlaying, setVideoMetadata);
     
     const file = e.target.files[0];
-
     const video = videoRef.current;
     const source = URL.createObjectURL(file);
     video.src = source;
@@ -43,7 +40,7 @@ function App() {
     });
 
     wavesurfer.current.load(source);
-
+    console.log("file",file);
     // Extracting metadata
     setVideoMetadata({
       name: file.name,
@@ -84,8 +81,6 @@ function App() {
       <div style={{ display: "flex", width: "100%", marginTop: "10px" }}>
         <VideoPlayer videoRef={videoRef} togglePlayPause={togglePlayPause} isPlaying={isPlaying} />
         <Metadata videoMetadata={videoMetadata} />
-       
-
       </div>
       <Waveform canvasRef={canvasRef} />
     </div>
