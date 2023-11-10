@@ -1,4 +1,3 @@
-// App.js
 import React, { useRef, useState, useEffect } from "react";
 import WaveSurfer from "https://unpkg.com/wavesurfer.js@7/dist/wavesurfer.esm.js";
 import VideoInput from "./Components/VideoInput";
@@ -38,19 +37,14 @@ function App() {
       waveColor: "rgb(134, 43, 162)",
       progressColor: "rgb(100, 0, 100)",
       media: video,
-        // Set a bar width
       barWidth: 2,
-      // Optionally, specify the spacing between bars
       barGap: 1,
-      // And the bar radius
       barRadius: 2,
     });
 
-
-
     wavesurfer.current.load(source);
 
-    // Extracting  metadata
+    // Extracting metadata
     setVideoMetadata({
       name: file.name,
       type: file.type,
@@ -90,6 +84,8 @@ function App() {
       <div style={{ display: "flex", width: "100%", marginTop: "10px" }}>
         <VideoPlayer videoRef={videoRef} togglePlayPause={togglePlayPause} isPlaying={isPlaying} />
         <Metadata videoMetadata={videoMetadata} />
+       
+
       </div>
       <Waveform canvasRef={canvasRef} />
     </div>
